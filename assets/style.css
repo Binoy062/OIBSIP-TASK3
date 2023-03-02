@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+
+
+body{
+    
+    background-color : #a1f2f5;
+    
+}
+
+.whole {
+    padding: 1em;
+    display: grid;
+    gap : 2em;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    color:rgb(8, 5, 99);
+}
+.main {
+    
+    width : auto;
+    height : auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 1.5em;
+    gap: 1em;
+    background-color: #30dd0e;
+    box-shadow: rgba(7, 218, 84, 0.4) 0px 2pz 4px,rgba(208, 16, 16, 0.3) 0px 7px 13px;
+    border-radius: 10px;
+
+}
+
+ .newtask {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap : 0.5em;
+   
+} 
+
+.newtask input {
+   
+    font-size: 22px;
+    padding:0.1em;
+    outline: none;
+    border-width: 0.5px;
+    border-style: solid;
+
+    color:rgba(24, 24, 24, 0.937);
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #e1e9e4;
+    border: none;
+    border-radius: 5px;
+}
+
+::placeholder{
+    color: rgb(12, 12, 12);
+    padding: 0.2em;
+}
+
+ 
+
+.newtask button {
+    padding : 0.5em;
+    font-size: 18px;
+    opacity: 0.2;
+    border-radius: 5px;
+    font-weight: 800;
+    border:none;
+}
+
+#add_button.active{
+    opacity:1;
+}
+
+
+.taskcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:1em;
+    width:100%;
+    font-weight: 700;
+    color:rgb(12, 12, 12);
+}
+
+
+
+.add_list.completed {
+    text-decoration: line-through;
+    color: rgb(108, 16, 6);
+}
+
+
+.taskcontainer.add_list {
+    width : 100%;
+    background-color: rgb(99, 5, 5);
+    height: auto; 
+    display: grid;
+    grid-template-columns: 1rem 1rem;
+    justify-items:space-evenly;
+    align-items: right;
+    padding : 1em;
+}
+
+.taskcontainer.add_list.item_btn {
+    justify-content: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap : 1em;
+    margin-left: 2rem
+}
+
+.ans{
+    display: flex;
+    margin-right: 3rem;
+}
+
+.item_btn .ibtns{
+    margin-left: 3rem;
+    display: flex;
+    justify-content: right;
+}
+
+i{
+    margin-right: 1rem;
+}
